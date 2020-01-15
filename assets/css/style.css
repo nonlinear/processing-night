@@ -1,0 +1,72 @@
+@font-face {
+	font-family: RenoMono;
+	src: url("../fonts/RenoMono.eot");
+	src: url("../fonts/RenoMono.eot?#iefix") format("embedded-opentype"), url("../fonts/RenoMono.woff") format("woff"), url("../fonts/RenoMono.ttf") format("truetype"), url("../fonts/RenoMono.svg#RenoMono") format("svg");
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	@font-face {
+		font-family: RenoMono;
+		src: url("../fonts/RenoMono.svg#RenoMono") format("svg");
+	}
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: RenoMono !important;
+	text-transform: uppercase;
+	color: #333 !important;
+
+}
+
+p:last-of-type,
+h1:last-of-type,
+h2:last-of-type {
+		margin-bottom: 0;
+}
+
+.container {
+	width: 800px !important;
+}
+
+
+section, header, footer {
+	padding: 30px 0;
+	background-color: #eee;
+}
+section:nth-of-type(2n-1) {
+		background-color: #e0e0e0;
+}
+section .container, header .container {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-gap: 30px;
+}
+
+.logo {
+	height: 40px;
+}
+
+footer ul {
+
+}
+
+footer li {
+	display: inline-block;
+}
+
+footer li:not(:first-of-type):before {
+
+	content: "|";
+	padding: 0 20px;
+}
+
+
+
