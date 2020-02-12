@@ -66,3 +66,19 @@ a.logo img {
 	height: 46px;
 	width: 46px;
 }
+
+@font-face {
+    font-family: RenoMono;
+    src: url("http://praxis.nyc/assets/fonts/RenoMono.eot");
+    src: url("http://praxis.nyc/assets/fonts/RenoMono.eot?#iefix") format("embedded-opentype"),
+    url("http://praxis.nyc/assets/fonts/RenoMono.woff") format("woff"),
+    url("http://praxis.nyc/assets/fonts/RenoMono.ttf") format("truetype"),
+    url("http://praxis.nyc/assets/fonts/RenoMono.svg#RenoMono") format("svg");
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: RenoMono;
+      src: url("http://praxis.nyc/assets/fonts/RenoMono.svg#RenoMono") format("svg");
+    }
+  }
