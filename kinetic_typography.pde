@@ -10,7 +10,7 @@ void setup() {
 void draw() {
   background(0);
 
-  // PGraphics 
+  // PGraphics
 
   pg.beginDraw();
   pg.background(0);
@@ -24,8 +24,8 @@ void draw() {
   pg.popMatrix();
   pg.endDraw();
 
-  int tilesX = 16;
-  int tilesY = 8;
+  int tilesX = 16*20;
+  int tilesY = 8*20;
 
   int tileW = int(width/tilesX);
   int tileH = int(height/tilesY);
