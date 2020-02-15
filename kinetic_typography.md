@@ -1,12 +1,12 @@
 ## Kinetic Typography
 
+
 1. Set Timer (10 min?)
 2. How do I feel? (context)
 3. What did I do? (brief)
 4. Demo
-
   - Tim Rodenbröker: Kinetic Typography ([article](https://timrodenbroeker.de/processing-tutorial-kinetic-typography-1/), [video](https://www.youtube.com/watch?v=SKDhkB8g1So&feature=youtu.be))
-  - Results ([github](https://github.com/nonlinear/processing-night/tree/master/kinetic_typography))
+  - Results ([github](https://github.com/nonlinear/processing-night/blob/master/kinetic_typography.pde))
 5. Possibilities
 6. Things I learned
    1. When working on Pgraphics element, make sure to define a renderer.
