@@ -3,11 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<style>html, body {padding: 0; margin: 0;}</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<script>
 
+		var fontSize = 35
+		var margin = 250
+
+		function preload(){
+			months = loadJSON('https://praxis.nyc/sample-data/months.json')
+		}
 
 		function setup() {
 			createCanvas(windowWidth, windowHeight);
@@ -17,18 +23,32 @@
 		}
 
 		function draw() {
-			fill(128)
+			background(180)
+			fill(255)
 			strokeWeight(1)
-			ellipse(40, 50, 60, 60)
+			ellipse(60, 60, 100, 100)
 			push()
 			rotate(30)
 			angleMode(DEGREES)
-			rect(60, 60, 40, 20)
+			rect(60, 60, 100, 20)
 			pop()
-			var planets = ["pluto", "juputer", "fuck"]
-			textSize(20)
-			textStyle(BOLD)
-			text(planets[1], 100, 100)
+			fill(0)
+			textSize(25)
+			textFont("RenoMono")
+			textSize(fontSize * .7)
+			text(months.months[0].name, margin, fontSize * 1)
+			text(months.months[1].name, margin, fontSize * 2)
+			text(months.months[2].name, margin, fontSize * 3)
+			text(months.months[3].name, margin, fontSize * 4)
+			text(months.months[4].name, margin, fontSize * 5)
+			text(months.months[5].name, margin, fontSize * 6)
+			text(months.months[6].name, margin, fontSize * 7)
+			text(months.months[7].name, margin, fontSize * 8)
+			text(months.months[8].name, margin, fontSize * 9)
+			text(months.months[9].name, margin, fontSize * 10)
+			text(months.months[10].name, margin, fontSize * 11)
+			text(months.months[11].name, margin, fontSize * 12)
+
 		}
 
 	</script>
