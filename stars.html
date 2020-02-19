@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+	<script src="stars.js"></script>
 	<script>
 		function setup() {
 			createCanvas(windowWidth, windowHeight)
@@ -21,34 +23,22 @@
 
 		function draw() {
 			background(125)
-		
 			ellipse(50, 50, 50, 50)
 			push()
-				star(30, 20, 3)
-			star(50, 40, 3)
-			star(40, 70, 3)
+			star(30, 20, 10, 3)
+			star(50, 40, 15, 3)
+			star(40, 70, 12, 3)
 			translate(100, 60)
-			star(30, 20, 3)
-			star(50, 40, 3)
-			star(40, 70, 3)
-			translate(0, -30)
-			star(30, 20, 3)
-			star(50, 40, 3)
-			star(40, 70, 3)
+			star(30, 20, 10, 3)
+			star(50, 40, 8, 3)
+			star(40, 70, 7, 3)
+			translate(20, -60)
+			star(30, 20, 15, 3)
+			star(50, 40, 10, 3)
+			star(40, 70, 12, 3)
 			pop()
 		}
 
-		function star(left, top, range) {
-				push()
-				translate(random(left, left + range), random(top, top + range))
-				line(0, -10, 0, 10)
-				rotate(45)
-		line(0, -10, 0, 10)
-		rotate(45)
-		line(0, -10, 0, 10)
-			pop()
-	
-		}
 
 	</script>
 	<script src="assets/vendors/p5.min.js"></script>
