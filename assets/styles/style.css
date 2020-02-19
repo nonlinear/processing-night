@@ -1,5 +1,4 @@
 html, body {
-	padding: 0; margin: 0; 
 	font-family: 'Poppins', sans-serif;
 	font-family: 'Fjalla One', sans-serif;
 
@@ -9,37 +8,51 @@ body {
 	background-color: purple;
 	color: white;
 	font-family: sans-serif;
+	font-family: RenoMono;
 }
 
 body, table {
-	border: 0 !important;
-	margin:0 !important;
+	border: 0;
+	margin:0;
+	padding: 0;
 	height: 100vh;
+    border-spacing:0;
 }
 
 table td {
 	height: 100%;
 	vertical-align: top;
-	padding: 10px !important;
+
+}
+.menu {
+	padding: 5px;
+}
+.content {
+	width: 100%;
+}
+.content iframe.iframe {
+	border: none;
+	frameborder: 0;
+	marginheight: 0px;
+	marginwidth: 0px;
+	height: 100%;
+	width: 100%
 }
 
-iframe {
-	border-radius: 5px;
-}
+
 a:not(.logo) {
-	border-radius: 20px;
-	background-color: white;
+	background-color: rgba(255, 255, 255, .7);
 	padding: 5px 10px;
 	color: purple;
 	text-decoration: none;
 	font-size: 12px;
-	margin: 2px 0;
-	display: inline-block;
+	margin: 1px 0;
+	display: block;
+	transition: all 300ms ease-in;
 }
 a:not(.logo):hover {
-	background-color: #ccc;
-	color: #000;
-	transition: all 300ms ease-in;
+	background-color: rgba(255, 255, 255, 1);
+	padding: 5px 5px 5px 15px;
 }
 .header {
 	height: 15vh;
@@ -55,7 +68,6 @@ a.soon {
 }
 .title {
 	font-size: 15px;
-	font-weight: bold;
 }
 a.logo {
 	border-bottom: solid 1px white;
