@@ -1,8 +1,9 @@
 # Processing Night
 
-![logo](https://praxis.nyc/assets/favicons/apple-touch-icon.png)
+<a href="https://praxis.nyc"><img src="https://praxis.nyc/assets/favicons/apple-touch-icon.png" width="60px" height="60px" /></a>
 
-Create your own p5js environment based on [this template](https://praxis.nyc/p5js-template).
+[visit website](https://nonlinear.nyc/processing-night)
+
 
 This is a companion for [Praxis Processing](https://praxis.nyc/processing) workshop.
 
