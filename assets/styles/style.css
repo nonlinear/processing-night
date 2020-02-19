@@ -94,12 +94,3 @@ a.logo img {
       src: url("../fonts/RenoMono.svg#RenoMono") format("svg");
     }
   }
-
-  @font-face {
-    font-family: NeueMetana;
-    src: url("../fonts/NeueMetana.ttf") format("truetype");
-  }
-
-h1 {
-	font-family: NeueMetana;
-  }
