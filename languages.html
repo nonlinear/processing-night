@@ -7,12 +7,20 @@
 </head>
 <body>
 	<script>
+		var data
+			function preload(){
+			data = loadJSON('assets/more-data/languages.json')
+		}
 function setup() {
-  createCanvas(windowWidth, windowHeight)
+   noCanvas()
+  var language = data.languages
+for (var i = 0; i < language.length; i++) {
+	createElement('h1', language[i].name)
+}
 }
 
 function draw() {
-  background(220)
+  background(100)
 }
 
 </script>
