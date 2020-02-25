@@ -10,6 +10,8 @@
 
 		var fontSize = 35
 		var margin = 250
+		var lineBase = 150
+		var month = months.months
 
 		function preload(){
 			months = loadJSON('assets/data/more/months.json')
@@ -33,19 +35,15 @@
 			textSize(25)
 			textFont("RenoMono")
 			textSize(fontSize * .7)
-			text(months.months[0].name, random(margin, margin+5), fontSize * 1)
-			text(months.months[1].name, random(margin, margin+5), fontSize * 2)
-			text(months.months[2].name, random(margin, margin+5), fontSize * 3)
-			text(months.months[3].name, random(margin, margin+5), fontSize * 4)
-			text(months.months[4].name, random(margin, margin+5), fontSize * 5)
-			text(months.months[5].name, random(margin, margin+5), fontSize * 6)
-			text(months.months[6].name, random(margin, margin+5), fontSize * 7)
-			text(months.months[7].name, random(margin, margin+5), fontSize * 8)
-			text(months.months[8].name, random(margin, margin+5), fontSize * 9)
-			text(months.months[9].name, random(margin, margin+5), fontSize * 10)
-			text(months.months[10].name, random(margin, margin+5), fontSize * 11)
-			text(months.months[11].name, random(margin, margin+5), fontSize * 12)
-
+			
+			stroke(120)
+			for (var i = 0; i <= 20; i++) {
+				line(100, lineBase, (i*10) + lineBase, lineBase * 2)
+				line(lineBase *2, lineBase, (i*10) + lineBase, lineBase * 2)
+			}
+			for (var i = 0; i < months.months.length; i++) {
+				text(months.months[i].name, random(margin, margin+5), fontSize * (i+1))
+			}
 		}
 
 	</script>
