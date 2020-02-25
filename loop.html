@@ -12,7 +12,13 @@ function setup() {
 }
 
 function draw() {
-  background(220)
+  background(1,75,100)
+  fill(random(237, 207), random(34, 4), random(93, 63))
+  noStroke()
+
+  for (var i = 0;i < 10;i = i + 1) {
+  	ellipse((i+1) * 100, 100, random(50, 80), random(50, 80))
+  }
 }
 
 </script>
