@@ -79,6 +79,25 @@ a.logo img {
 	width: 46px;
 }
 
+.alert {
+	background-color: rgba(255, 255, 255, .8);
+	color: black;
+	padding: 15px;
+	font-size: 80%;
+}
+	button {
+		padding: 10px 25px;
+		padding-top: 13px;
+		background-color: #fff;
+		border: solid 1px #ccc;
+
+	font-family: RenoMono;
+	text-transform: uppercase;
+	}
+	button:hover {
+		border: solid 1px #666;
+	}
+
 @font-face {
     font-family: RenoMono;
     src: url("../fonts/RenoMono.eot");
