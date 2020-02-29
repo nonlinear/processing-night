@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+<a href="https://medium.com/flawless-app-stories/how-to-request-device-motion-and-orientation-permission-in-ios-13-74fc9d6cd140">How to Request Device Motion and Orientation Permission in iOS 13</a>
+	<script>
+		 DeviceMotionEvent.requestPermission()
+.then(response => {
+  if (response == 'granted') {
+    window.addEventListener('devicemotion', (e) => {
+      // do something with e
+    })
+  }
+})
+.catch(console.error)
+DeviceOrientationEvent.requestPermission()
+.then(response => {
+  if (response == 'granted') {
+    window.addEventListener('deviceorientation', (e) => {
+      // do something with e
+    })
+  }
+})
+.catch(console.error)
+	</script>
+
+	<script src="assets/vendors/p5.min.js"></script>
+	<script src="assets/vendors/p5.dom.min.js"></script>
+	<script src="assets/vendors/p5.sound.min.js"></script>
+
+</body>
+</html>
